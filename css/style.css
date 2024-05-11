@@ -19,14 +19,14 @@ body{
 }
 
 .header{
-    background: #361d32;
+    background: #0e1e2f;
     width: 100%;
     height: 70px;
     position: fixed;
 }
 
 .sidebar{
-    background: #361d32;
+    background: #0e1e2f;
     width: 300px;
     height: 100%;
     position: fixed;
@@ -74,7 +74,7 @@ body{
     height: 22px;
     cursor: pointer;
     transition:all 0.5s;
-    z-index: 9999;
+    z-index: 99;
 }
 
 
@@ -112,8 +112,8 @@ input[type = "checkbox"]:checked ~ .toggle-icon > .bar-bottom{
     transition: margin-left 0.3s ease-out; 
     /* margin-left: 150px; */
     /* display: flex; */
-    justify-content: center; /* Horizontally center content */
-    align-items: center; /* Vertically center content */
+    justify-content: center; 
+    align-items: center; 
     height: 100vh; 
     text-align: center; 
 }
@@ -142,4 +142,14 @@ input[type = "checkbox"]:checked ~ .toggle-icon > .bar-bottom{
 
 .abus.move-right{
     margin-left: 300px;
+}
+
+
+#preloader{
+    background: #0e1e2f url(/images/preview.gif) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-size: 15%;
 }
