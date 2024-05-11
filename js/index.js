@@ -14,13 +14,42 @@ document.getElementById('toggle-sidebar').addEventListener('change', function() 
 });
 
 // Not select the same page
-var sidebarLinks = document.querySelectorAll('.sidebar .menu a');
-for (var i = 0; i < sidebarLinks.length; i++) {
-    sidebarLinks[i].addEventListener('click', function(event) {
-        var currentUrl = window.location.href.split('#')[0];
-        var clickedUrl = this.href.split('#')[0];
-        if (currentUrl === clickedUrl) {
-            event.preventDefault();
-        }
+// var sidebarLinks = document.querySelectorAll('.sidebar .menu a');
+// for (var i = 0; i < sidebarLinks.length; i++) {
+//     sidebarLinks[i].addEventListener('click', function(event) {
+//         var currentUrl = window.location.href.split('#')[0];
+//         var clickedUrl = this.href.split('#')[0];
+//         if (currentUrl === clickedUrl) {
+//             event.preventDefault();
+//         }
+//     });
+// };
+
+
+//preloader
+document.addEventListener("DOMContentLoaded", function() {
+  
+    var sidebarLinks = document.querySelectorAll('.sidebar a');
+    for (var i = 0; i < sidebarLinks.length; i++) {
+
+        sidebarLinks[i].addEventListener('click', function(event) {
+
+            var currentUrl = window.location.href.split('#')[0];
+            var clickedUrl = this.href.split('#')[0];
+
+            if (currentUrl === clickedUrl) {
+                event.preventDefault();
+            }
+
+            
+        });
+    };
+
+  
+    var loader = document.getElementById('preloader');
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            loader.style.display = 'none';
+        }, 200); 
     });
-};
+});
