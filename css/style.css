@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f8f9fa; /* Replace with your desired color */
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:  #f1e8e6;
+    color: #f1e8e6;
+}
+
+.header{
+    background: #0e1e2f;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+}
+
+.sidebar{
+    background: #0e1e2f;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    margin-top: 50px;
+    transform: translateX(-100%);
+    transition: transform 250ms ease-in-out;
+
+}
+
+
+/* .profile{
+    text-align: center;
+    padding: 20px;
+} */
+
+
+.menu li a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.menu li:hover{
+    background: #f1e8e6;
+    color: #361d32;
+    transition: all 0.3s;
+}
+
+.toggle-icon div{
+    background: #f1e8e6;
+    width: 100%;
+    height: 3px;
+    transition: all 0.5s;
+}
+
+
+.toggle-icon{
+    position: fixed;
+    top: 22px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition:all 0.5s;
+    z-index: 99;
+}
+
+
+
+.bar-center{
+    margin: 3px 0;
+}
+
+
+input[type = "checkbox"]:checked ~ .sidebar{
+    transform: translateX(0);
+}   
+
+
+input[type = "checkbox"]:checked ~ .toggle-icon > .bar-top{
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type = "checkbox"]:checked ~ .toggle-icon > .bar-center{
+    opacity: 0;
+}
+
+input[type = "checkbox"]:checked ~ .toggle-icon > .bar-bottom{
+    transform: rotate(-135deg);
+    margin-top: -12px;
+}
+
+
+.abus{
+    /* margin: 150px;  */
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #f8f9fa;
+    transition: margin-left 0.3s ease-out; 
+    /* margin-left: 150px; */
+    /* display: flex; */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center; 
+}
+
+
+
+.abus h1 {
+    color: #333;
+    padding: 10px;
+    
+    
+}
+
+.abus p {
+    color: #666;
+    padding: 10px;
+    margin: 3px;
+    font-size: 20px;
+
+}
+
+
+.sidebar.active ~ .abus {
+    margin-left: 0px; 
+}
+
+.abus.move-right{
+    margin-left: 300px;
+}
+
+
+#preloader{
+    background: #0e1e2f url(/images/preview.gif) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-size: 15%;
+}
