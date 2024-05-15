@@ -34,6 +34,11 @@ body{
     transform: translateX(-100%);
     transition: transform 250ms ease-in-out;
 
+    /* border: 1px solid red;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.8; */
+
 }
 
 
@@ -146,7 +151,7 @@ input[type = "checkbox"]:checked ~ .toggle-icon > .bar-bottom{
 
 
 #preloader{
-    background: #0e1e2f url(/images/preview.gif) no-repeat center center;
+    /* background: #0e1e2f url(/i/mages/preview.gif) no-repeat center center; */
     width: 100%;
     height: 100vh;
     position: fixed;
