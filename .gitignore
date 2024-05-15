@@ -6,4 +6,7 @@ backend/result.txt
 .env
 
 # Python Cache
-backend/django/__pycache__
+backend/django/FakeNewsDetection/__pycache__
+
+# Django Stuffs
+backend/django/db.sqlite3
