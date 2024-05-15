@@ -4,7 +4,7 @@ import spacy
 nlp = spacy.load("en_core_web_lg")
 
 
-def calculate_similarity(sentence1, sentence2):
+def calculate_similarity(sentence1: str, sentence2: str) -> float:
     doc1 = nlp(sentence1)
     doc2 = nlp(sentence2)
     similarity_score = doc1.similarity(doc2)
