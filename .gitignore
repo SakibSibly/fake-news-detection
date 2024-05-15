@@ -1,6 +1,9 @@
-# Scrapy stuffs:
+# Scrapy Stuffs:
 backend/input.txt
 backend/result.txt
 
 # Environments
 .env
+
+# Python Cache
+backend/django/__pycache__
