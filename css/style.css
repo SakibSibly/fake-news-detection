@@ -158,3 +158,29 @@ input[type = "checkbox"]:checked ~ .toggle-icon > .bar-bottom{
     z-index: 100;
     background-size: 15%;
 }
+
+
+
+.to-top{
+    position: fixed;
+    right: 15px;
+    bottom: 16px;
+    background-color: #1d4672;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 32px;
+    pointer-events: none;
+    transition: all 0.5s;
+    opacity: 0; 
+}
+
+.to-top.active{
+    opacity: 1;
+    pointer-events: auto;
+}
