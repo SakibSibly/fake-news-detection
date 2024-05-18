@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ফেক নিউজ এর কাঁথায় আগুন</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="containers">
+
+        <div id="history">
+
+            <svg class = "icon his" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" onclick="showhistory()">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg> 
+            
+        </div>
+
+        <div id="masala">
+
+            <select name="" id="choiceLang">
+                <option value="eng">English</option>
+                <option value="ban">Bangla</option>
+            </select>
+
+
+            <div id="newsBox">
+                <textarea name="" id="bigT" width="50%" height="30%" placeholder="Enter news to check authenticity"></textarea>
+                <button class="btn">Check</button>
+            </div>
+
+            <div id="showRes">
+                <textarea name="" id="smT"></textarea>
+                <button class="btn">Print</button>
+            </div>
+                       
+        </div>
+
+
+
+        <div id="profile">
+
+            <svg class = "icon prof" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" onclick="showProfile()">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+              </svg>
+
+        </div>
+
+    </div>
+
+
+
+
+<script>
+    function showhistory(){
+
+        let x = document.getElementById('history');
+        x.style.width = x.style.width === '4vw' ? '33vw' : '4vw';
+        
+    }
+
+    function showProfile(){
+
+        let x = document.getElementById('profile');
+        x.style.width = x.style.width === '4vw' ? '33vw' : '4vw';
+}
+
+</script>
+    
+</body>
+</html>
+
