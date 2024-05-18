@@ -1,6 +1,12 @@
-# Scrapy stuffs:
+# Scrapy Stuffs:
 backend/input.txt
 backend/result.txt
 
 # Environments
 .env
+
+# Python Cache
+backend/django/FakeNewsDetection/__pycache__
+
+# Django Stuffs
+backend/django/db.sqlite3
