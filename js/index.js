@@ -43,10 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             
         });
-    };
+    }
 
   
     var loader = document.getElementById('preloader');
+
     window.addEventListener('load', function() {
         setTimeout(function() {
             loader.style.display = 'none';
@@ -71,4 +72,21 @@ window.addEventListener("scroll", ()=>{
 toTop.addEventListener('click', function(e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+// toggle sidebar
+
+var label = document.querySelector('label[for="toggle-sidebar"]');
+var checkbox = document.getElementById('toggle-sidebar');
+
+label.addEventListener('click', function(e) {
+    e.preventDefault();
+    checkbox.checked = !checkbox.checked;
+
+ 
+    var changeEvent = new Event('change');
+
+    
+    checkbox.dispatchEvent(changeEvent);
 });
