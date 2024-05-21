@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 10;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -17,7 +17,6 @@
 }
 .form-box{
     width: 90%;
-    height: 70%;
     max-width: 450px;
     min-width: 350px;
     background: powderblue;
@@ -62,7 +61,17 @@
 
 .input-field i{
     margin-left: 15px;
-    color: #633434;
+    color: #999;
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+    text-decoration: none;
+    color: green;
 }
 
 .Btn-field{
@@ -77,24 +86,24 @@
     height: 40px;
     border-radius: 20px;
     border: 0;
-    outline: 0; 
+    outline: 0;
     cursor: pointer;
     transition: background 1s;
 }
 
-.not-account button{
+.account-has button{
     flex-basis: 100%;
     background: green;
     color: white;
     height: 30px;
+    border-radius: 30px;
     width: 70px;
-    border-radius: 10px;
     border: 0;
-    outline: 0; 
+    outline: 0;
     cursor: pointer;
     transition: background 1s;
 }
 
 .input-group{
-    height: 170px;
+    height: 400px;
 }
