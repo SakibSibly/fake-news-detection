@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../css/style_signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        
+    <div class="form-box">
+        <div class = "account-has">
+        <p>Already have an account? 
+            <a href="signin.html">
+            <button type = "button" class="signinbtn" >sign in</button>
+            </a>
+        </p>
+        </div>
+        
+        
+    <h1>Sign Up</h1>
+    <div class="underline"></div>
+    <form method = "get" action="../html/about.html" onsubmit="return signupp()">
+        <div class="input-group">
+            <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="name" name="name" placeholder="Full Name">
+            </div>
+
+            <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="userName" name="userName" placeholder="User Name">
+            </div>
+
+            <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            </div>
+            
+            <div class="input-field">
+            <i class="fa-regular fa-calendar"></i>
+            <input type="date" id="date" name="date" title="Date of Birth">
+            </div>
+
+            <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="pass" name="pass" placeholder="Password">
+            </div>
+            <p>Password Suggesions <a href="#"> Click here! </a></p>
+        </div>
+
+        <div class = "Btn-field">
+            <button type="submit" class="signupbtn">Sign up</button>
+        </div>
+    </form>
+    </div>
+
+    </div> <!-- end container -->
+
+    
+</body>
+<script src="../js/signup.js"></script>
+</html>
