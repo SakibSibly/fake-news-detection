@@ -10,56 +10,59 @@
 </head>
 <body>
     <div class="container">
-    <div class="form-box">
-        <div class = "account-has">
-        <p>Already have an account? 
-            <a href="signin.html">
-            <button type = "button" class="signinbtn" >sign in</button>
-            </a>
-        </p>
+        <div class="form-box">
+            <h1>Sign Up</h1>
+            <div class="underline"></div>
+            <form method="get" action="../html/about.html" onsubmit="return signupp()">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="name" name="name" placeholder="Full Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="userName" name="userName" placeholder="User Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-regular fa-calendar"></i>
+                        <input type="date" id="date" name="date" title="Date of Birth">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="pass" name="pass" placeholder="Password" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    </div>
+                    <p>Password Suggestions <a href="#"> Click here! </a></p>
+                </div>
+
+                <div class="Btn-field">
+                    <button type="submit" class="signupbtn">Sign up</button>
+                </div>
+
+                <div id="message">
+                    <h4>Password must contain the following:</h4>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+            </form>
+            <div class="account-has">
+                <p>Already have an account? 
+                    <a href="signin.html"> sign in </a>
+                </p>
+            </div>
         </div>
-        
-        
-    <h1>Sign Up</h1>
-    <div class="underline"></div>
-    <form method = "get" action="../html/about.html" onsubmit="return signupp()">
-        <div class="input-group">
-            <div class="input-field">
-            <i class="fa-solid fa-user"></i>
-            <input type="text" id="name" name="name" placeholder="Full Name">
-            </div>
-
-            <div class="input-field">
-            <i class="fa-solid fa-user"></i>
-            <input type="text" id="userName" name="userName" placeholder="User Name">
-            </div>
-
-            <div class="input-field">
-            <i class="fa-solid fa-envelope"></i>
-            <input type="email" id="email" name="email" placeholder="Email Address">
-            </div>
-            
-            <div class="input-field">
-            <i class="fa-regular fa-calendar"></i>
-            <input type="date" id="date" name="date" title="Date of Birth">
-            </div>
-
-            <div class="input-field">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" id="pass" name="pass" placeholder="Password">
-            </div>
-            <p>Password Suggesions <a href="#"> Click here! </a></p>
-        </div>
-
-        <div class = "Btn-field">
-            <button type="submit" class="signupbtn">Sign up</button>
-        </div>
-    </form>
-    </div>
-
     </div> <!-- end container -->
-
-    
+    <script src="../js/signup.js"></script>
 </body>
-<script src="../js/signup.js"></script>
 </html>
