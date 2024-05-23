@@ -138,3 +138,9 @@ h4 {
 #message{
     margin-top: -12%;
 }
+
+#pass-icon{
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
