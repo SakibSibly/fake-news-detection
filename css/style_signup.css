@@ -134,3 +134,7 @@ h4 {
 .invalid {
     color: red;
 }
+
+#message{
+    margin-top: -12%;
+}
