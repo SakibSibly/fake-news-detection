@@ -7,7 +7,7 @@
 
 .container{
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url('../images/background.jpg');
     background-position: center;
     background-size: cover;
@@ -41,10 +41,6 @@
 }
 
 
-/* .account-has{
-    align-items: left;
-} */
-
 .input-field{
     background: #eaeaea;
     margin: 15px 0;
@@ -69,6 +65,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    margin-top: -10%;
 }
 .Btn-field button{
     flex-basis: 100%;
@@ -82,7 +79,7 @@
     transition: background 1s;
 }
 
-.not-account button{
+/* .not-account button{
     flex-basis: 100%;
     background: green;
     color: white;
@@ -93,8 +90,12 @@
     outline: 0; 
     cursor: pointer;
     transition: background 1s;
-}
+} */
 
 .input-group{
     height: 170px;
+}
+
+.not-account{
+    margin: 10px 0;
 }
