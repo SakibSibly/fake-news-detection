@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 10;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
-    height: 110vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url('../images/background.jpg');
+    height: 130vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/background.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.form-box{
+
+.form-box {
+    height: auto;
     width: 90%;
     max-width: 450px;
     min-width: 350px;
@@ -23,15 +25,15 @@
     padding: 55px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: -2px 2px 15px rgba(0,0,0,0.5);
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
-.form-box h1{
+.form-box h1 {
     font-size: 30px;
     color: green;
 }
 
-.form-box .underline{
+.form-box .underline {
     width: 30px;
     height: 4px;
     background: green;
@@ -39,19 +41,15 @@
     border-radius: 5px;
 }
 
-
-/* .account-has{
-    align-items: left;
-} */
-
-.input-field{
+.input-field {
     background: #eaeaea;
     margin: 15px 0;
     border-radius: 10px;
     display: flex;
     align-items: center;
 }
-.input-field input{
+
+.input-field input {
     width: 100%;
     background: transparent;
     border: 0;
@@ -59,27 +57,28 @@
     padding: 18px 15px;
 }
 
-.input-field i{
+.input-field i {
     margin-left: 15px;
     color: #999;
 }
 
-form p{
+form p {
     text-align: left;
     font-size: 13px;
 }
 
-form p a{
+form p a {
     text-decoration: none;
     color: green;
 }
 
-.Btn-field{
+.Btn-field {
     width: 100%;
     display: flex;
     align-items: center;
 }
-.Btn-field button{
+
+.Btn-field button {
     flex-basis: 100%;
     background: green;
     color: white;
@@ -91,7 +90,7 @@ form p a{
     transition: background 1s;
 }
 
-.account-has button{
+.account-has button {
     flex-basis: 100%;
     background: green;
     color: white;
@@ -104,6 +103,33 @@ form p a{
     transition: background 1s;
 }
 
-.input-group{
+.input-group {
     height: 400px;
+}
+
+.account-has {
+    margin: 10px 0;
+}
+
+.account-has a {
+    color: rgb(83, 23, 49);
+    cursor: pointer;
+}
+
+form {
+    margin-top: -10%;
+}
+
+h4 {
+    text-align: left;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
 }
