@@ -90,3 +90,12 @@ label.addEventListener('click', function(e) {
     
     checkbox.dispatchEvent(changeEvent);
 });
+
+
+//Drop down profile menu
+
+let subMenu = document.getElementById("subMenu");
+
+function toggleMenu() {
+    subMenu.classList.toggle("open-menu");
+}

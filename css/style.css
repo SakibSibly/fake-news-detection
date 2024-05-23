@@ -51,8 +51,17 @@ body{
     right: 10%;
     width: 320px;
     color:#fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
 
 }
+
+.submenu-wrap.open-menu{
+    max-height: 400px;
+
+}
+
 
 .submenu{
     background: #0e1e2f;
@@ -82,12 +91,20 @@ body{
     text-decoration: none;
     color: #ccc;
     margin: 12px 0;
-    padding: 0;
+    /* padding: 0; */
 }
 
 .submenu-link p{
-    width: 100%;
+    width: 40%;
 }
+
+.submenu-link:hover p{
+   font-weight: 600;
+}
+
+/* .submenu-link span{
+    justify-content: right;
+} */
 
 .sidebar{
     background: #0e1e2f;
