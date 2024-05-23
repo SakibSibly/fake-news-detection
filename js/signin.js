@@ -14,3 +14,18 @@ function signinn(){
         return true;
     }
 }
+
+
+// Eye Btn
+function pass() {
+    var passInput = document.getElementById('pass');
+    var passIcon = document.getElementById('pass-icon');
+
+    if (passInput.type === "password") {
+        passInput.type = "text";
+        passIcon.className = "fa-solid fa-eye";
+    } else {
+        passInput.type = "password";
+        passIcon.className = "fa-solid fa-eye-slash";
+    }
+}

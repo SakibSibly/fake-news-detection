@@ -99,3 +99,9 @@
 .not-account{
     margin: 10px 0;
 }
+
+#pass-icon{
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
