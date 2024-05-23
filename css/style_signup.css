@@ -59,7 +59,7 @@
 
 .input-field i {
     margin-left: 15px;
-    color: #999;
+    color: grey;
 }
 
 form p {
@@ -88,6 +88,7 @@ form p a {
     outline: 0;
     cursor: pointer;
     transition: background 1s;
+    margin-top: 10%;
 }
 
 .account-has button {
@@ -132,4 +133,14 @@ h4 {
 /* Add a red text color and an "x" icon when the requirements are wrong */
 .invalid {
     color: red;
+}
+
+#message{
+    margin-top: -12%;
+}
+
+#pass-icon{
+    position: relative;
+    right: 10px;
+    cursor: pointer;
 }

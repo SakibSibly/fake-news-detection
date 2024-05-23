@@ -58,7 +58,7 @@
 
 .input-field i{
     margin-left: 15px;
-    color: #633434;
+    color: grey;
 }
 
 .Btn-field{
@@ -98,4 +98,10 @@
 
 .not-account{
     margin: 10px 0;
+}
+
+#pass-icon{
+    position: relative;
+    right: 10px;
+    cursor: pointer;
 }

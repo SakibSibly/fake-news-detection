@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="/css/style.css">
+
+<script src="https://kit.fontawesome.com/33fdcea958.js" crossorigin="anonymous"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +10,52 @@
 </head>
 <body>
     <div id="preloader"></div>
-    <div class="header"></div>
+    <div class="header">
+        <div class="navbar">
+            <i id="myelement" class="fa-solid fa-user" onclick="toggleMenu()"></i>   
+            
+            
+            <div class="submenu-wrap" id="subMenu">
+                <div class="submenu">
+                    <div class="userinfo">
+                        <h2>Profile</h2>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="submenu-link">
+                        <i class="fa-solid fa-user"></i>   
+                        <p>Edit Profile</p>
+                        
+                    </a>
+                    <a href="#" class="submenu-link">
+                        <i class="fa-solid fa-message"></i> 
+                        <p>Contact us</p>
+                       
+                    </a>
+                    <a href="#" class="submenu-link">
+                        <i class="fa-solid fa-question"></i>
+                        <p>Help Center</p>
+                        
+                    </a>
+
+                    <hr>
+
+                    <a href="./html/signin.html" class="submenu-link">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <p id="signin-icon">SignIn</p>
+                        
+                    </a>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+    
     <input type="checkbox" name="" id="toggle-sidebar">
     <label for="toggle-sidebar" class="toggle-icon">
         <div class="bar-top"></div>
@@ -18,7 +65,7 @@
 
     <div class="sidebar">
         <ul class="menu">
-            <li><a href="html/checker.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="html/about.html">About Us</a></li>
             <li><a href="html/services.html">Services</a></li>
             <li><a href="">Contact Us</a></li>
