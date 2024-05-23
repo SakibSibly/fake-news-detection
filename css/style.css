@@ -25,6 +25,70 @@ body{
     position: fixed;
 }
 
+.header .navbar{
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 20px 20px;
+    
+}
+
+.header .navbar i{
+    width: 40px;
+    /* position: right; */
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: 2px;
+}
+
+.submenu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    color:#fff;
+
+}
+
+.submenu{
+    background: #0e1e2f;
+    padding: 20px;
+    margin: 10px;
+}
+
+.submenu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+
+}
+
+.userinfo{
+    display: flex;
+    /* align-items: center; */
+    /* margin-bottom: 20px; */
+    font-size: 18px;
+}
+
+.submenu-link{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ccc;
+    margin: 12px 0;
+    padding: 0;
+}
+
+.submenu-link p{
+    width: 100%;
+}
+
 .sidebar{
     background: #0e1e2f;
     width: 300px;
