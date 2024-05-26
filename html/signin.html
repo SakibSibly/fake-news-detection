@@ -20,14 +20,14 @@
         <form method="get" action="../index.html" onsubmit="return signinn()">
             <div class="input-group">
                 
-                <div class="input-field">
-                <i class="fa-solid fa-envelope"></i>
+                <div class="input-field email-field">
+                <i id="inpId1" class="fa-solid fa-envelope"></i>
                 <input type="email" id="mail" name="mail" placeholder="Email Address">
                 <span id="mail-error" class="error-message"></span>
                 </div>
                 
-                <div class="input-field">
-                <i class="fa-solid fa-lock"></i>
+                <div class="input-field password-field">
+                <i id="inpId2" class="fa-solid fa-lock"></i>
                 <input type="password" id="pass" name="pass" placeholder="Password">
                 <i id="pass-icon" onclick="pass()" class="fa-solid fa-eye-slash"></i>
                 <span id="pass-error" class="error-message"></span>

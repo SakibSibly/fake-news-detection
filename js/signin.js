@@ -3,22 +3,24 @@ function signinn(){
     var Pass = document.getElementById('pass');
     var mailError = document.getElementById('mail-error');
     var passError = document.getElementById('pass-error');
+    var passField = document.querySelector('.password-field');
+    var emailField = document.querySelector('.email-field');
 
     if(Mail.value == ""){
-        Mail.style.borderColor = "red";
+        emailField.style.borderColor = "red";
         mailError.textContent = "This is a required field.";
         return false;
     }
     else if(Pass.value  == ""){
-        Pass.style.borderColor = "red";
+        passField.style.borderColor = "red";
         passError.textContent = "This is a required field.";
         return false;
     }
     else{
         // alert("Login Successfully.");
-        Mail.style.borderColor = "";
+        emailField.style.borderColor = "transparent";
         mailError.textContent = "";
-        Pass.style.borderColor = "";
+        emailField.style.borderColor = "transparent";
         passError.textContent = "";
         return true;
     }

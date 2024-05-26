@@ -53,6 +53,13 @@
     margin-bottom: 25px;
 
 }
+
+.email-field, .password-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent; 
+}
+
 .input-field input{
     width: 100%;
     background: transparent;
@@ -64,6 +71,7 @@
 .input-field i{
     margin-left: 15px;
     color: grey;
+    border: 1px solid transparent;
 }
 
 .Btn-field{
@@ -107,9 +115,11 @@
 }
 
 #pass-icon{
-    position: relative;
+    position: absolute;
     right: 10px;
     cursor: pointer;
+    /* border: 1px solid transparent; */
+    /* border-radius: 10px; */
 }
 
 
