@@ -5,25 +5,52 @@ function signinn(){
     var passError = document.getElementById('pass-error');
     var passField = document.querySelector('.password-field');
     var emailField = document.querySelector('.email-field');
+    var flag = true;
+
+    Mail.addEventListener('input', function() {
+        if(Mail.value != ""){
+            emailField.style.borderColor = "transparent";
+            mailError.textContent = "";
+        }
+    });
+
+    Pass.addEventListener('input', function() {
+        if(Pass.value != ""){
+            passField.style.borderColor = "transparent";
+            passError.textContent = "";
+        }
+    });
+    
+
 
     if(Mail.value == ""){
         emailField.style.borderColor = "red";
         mailError.textContent = "This is a required field.";
-        return false;
+        flag = false;
     }
-    else if(Pass.value  == ""){
+    
+    if(Pass.value  == ""){
         passField.style.borderColor = "red";
         passError.textContent = "This is a required field.";
-        return false;
+        flag = false;
     }
-    else{
-        // alert("Login Successfully.");
+
+    if(flag){
+        passField.style.borderColor = "transparent";
+        passError.textContent = "";
         emailField.style.borderColor = "transparent";
         mailError.textContent = "";
-        emailField.style.borderColor = "transparent";
-        passError.textContent = "";
-        return true;
     }
+
+
+    return flag;
+
+    // else{
+    //     // alert("Login Successfully.");
+    //     passField.style.borderColor = "transparent";
+    //     passError.textContent = "";
+    //     return true;
+    // }
 }
 
 
