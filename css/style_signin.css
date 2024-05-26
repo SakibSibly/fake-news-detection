@@ -50,13 +50,13 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
 }
 .input-field input{
     width: 100%;
     background: transparent;
-    border: 0;
+    border: 1px solid transparent;
     outline: 0;
     padding: 18px 15px;
 }
@@ -82,7 +82,7 @@
     outline: 0; 
     cursor: pointer;
     transition: background 1s;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 /* .not-account button{
@@ -118,4 +118,6 @@
     position: absolute;
     top: 100%;
     left: 0;
+    font-size: 13px;
+    
 }
