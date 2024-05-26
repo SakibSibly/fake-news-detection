@@ -38,6 +38,8 @@
     background: green;
     margin: 10px auto 50px auto;
     border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 
@@ -47,6 +49,9 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+
 }
 .input-field input{
     width: 100%;
@@ -77,6 +82,7 @@
     outline: 0; 
     cursor: pointer;
     transition: background 1s;
+    margin-top: 20px;
 }
 
 /* .not-account button{
@@ -104,4 +110,12 @@
     position: relative;
     right: 10px;
     cursor: pointer;
+}
+
+
+.error-message {
+    color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
