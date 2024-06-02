@@ -38,6 +38,8 @@
     background: green;
     margin: 10px auto 50px auto;
     border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 
@@ -47,11 +49,21 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+    position: relative;
+    margin-bottom: 25px;
+
 }
+
+.email-field, .password-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent; 
+}
+
 .input-field input{
     width: 100%;
     background: transparent;
-    border: 0;
+    border: 1px solid transparent;
     outline: 0;
     padding: 18px 15px;
 }
@@ -59,6 +71,7 @@
 .input-field i{
     margin-left: 15px;
     color: grey;
+    border: 1px solid transparent;
 }
 
 .Btn-field{
@@ -77,6 +90,7 @@
     outline: 0; 
     cursor: pointer;
     transition: background 1s;
+    margin-top: 35px;
 }
 
 /* .not-account button{
@@ -101,7 +115,19 @@
 }
 
 #pass-icon{
-    position: relative;
+    position: absolute;
     right: 10px;
     cursor: pointer;
+    /* border: 1px solid transparent; */
+    /* border-radius: 10px; */
+}
+
+
+.error-message {
+    color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 13px;
+    
 }
